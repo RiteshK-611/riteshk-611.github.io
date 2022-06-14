@@ -30,6 +30,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: ./out # The folder the action should deploy.
-          target-folder: out
+          folder: 'out' # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
