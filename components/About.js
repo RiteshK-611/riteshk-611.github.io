@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -9,9 +11,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">
-            // I am not your average developer
-          </p>
+          <p className="py-2 text-gray-600">I am not your average developer</p>
           <p className="py-2 text-gray-600">
             I have spent the last 12 years in the fire service working as a
             professional firefighter & paramedic. I have always had a knack for
@@ -28,14 +28,14 @@ const About = () => {
             now spending my time building projects with React JS, Firebase, and
             learning new technologies.
           </p>
-          <a href="/#projects">
+          <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer hover:text-[#5651e5]">
               Check out some of my latest projects.
             </p>
-          </a>
+          </Link>
         </div>
         <div className="w-full h-auto m-auto rounded-xl bg-gray-800 shadow-lg shadow-gray-400 p-4 hover:scale-95 ease-in duration-300">
-          <img
+          <Image
             className="rounded-lg"
             src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
             alt="/"
