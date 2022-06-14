@@ -7,7 +7,7 @@ module.exports = {
   nextConfig,
   images: {
     loader: 'imgix',
-    path: '/',
+    path: '',
     domains: ['github.com'],
   }
 }
