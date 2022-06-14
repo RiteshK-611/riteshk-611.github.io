@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-node@v3
       - run: npm install
       - run: npm run build
+      - run: npx run export
         env:
           CI: true
 
