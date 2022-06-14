@@ -6,8 +6,6 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    loader: 'imgix',
-    path: '',
     domains: ['github.com'],
   }
 }
