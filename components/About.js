@@ -35,7 +35,7 @@ const About = () => {
           </Link>
         </div>
         <div className="w-full h-auto m-auto rounded-xl bg-gray-800 shadow-lg shadow-gray-400 p-4 hover:scale-95 ease-in duration-300">
-          <Image
+          <img
             className="rounded-lg"
             src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
             alt="/"
