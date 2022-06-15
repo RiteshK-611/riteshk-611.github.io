@@ -5,6 +5,8 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
+  loader: 'akamai',
+  path: '',
   images: {
     domains: ['github.com'],
   }
