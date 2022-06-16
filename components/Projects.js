@@ -11,10 +11,54 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I've Built</h2>
         <div className="grid grid-rows-4 gap-8">
-          <ProjectItem title="Project" bgImg={img} projectUrl="https://github.com/" />
-          <ProjectItem title="Project" bgImg={img} projectUrl="https://github.com/" />
-          <ProjectItem title="Project" bgImg={img} projectUrl="https://github.com/" />
-          <ProjectItem title="Project" bgImg={img} projectUrl="https://github.com/" />
+          <ProjectItem
+            title="Project"
+            bgImg={img}
+            projectUrl="https://github.com/"
+            usedArray={[
+              "React",
+              "Javascript",
+              "MongoDB",
+              "Node",
+              "MaterialUI",
+            ]}
+          />
+          <ProjectItem
+            title="Project"
+            bgImg={img}
+            projectUrl="https://github.com/"
+            usedArray={[
+              "React",
+              "Javascript",
+              "MongoDB",
+              "Node",
+              "MaterialUI",
+            ]}
+          />
+          <ProjectItem
+            title="Project"
+            bgImg={img}
+            projectUrl="https://github.com/"
+            usedArray={[
+              "React",
+              "Javascript",
+              "MongoDB",
+              "Node",
+              "MaterialUI",
+            ]}
+          />
+          <ProjectItem
+            title="Project"
+            bgImg={img}
+            projectUrl="https://github.com/"
+            usedArray={[
+              "React",
+              "Javascript",
+              "MongoDB",
+              "Node",
+              "MaterialUI",
+            ]}
+          />
         </div>
       </div>
     </div>
