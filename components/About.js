@@ -41,12 +41,12 @@ const About = () => {
           <div>
             <p>Apart from coding, designing and developing, there are few hobbies and activities that I love to do like...</p>
             <ul>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Photography</span></li>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Swimming</span></li>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Yoga</span></li>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Football</span></li>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Watching Movies</span></li>
-              <li className="flex items-center"><MdOutlinePlayArrow /><span className="pl-2">Playing Video Games</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Photography</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Swimming</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Yoga</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Football</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Watching Movies</span></li>
+              <li className="flex items-center"><MdOutlinePlayArrow color="#5651e5" /><span className="pl-2">Playing Video Games</span></li>
             </ul>
           </div>
           <Link href="/#projects">

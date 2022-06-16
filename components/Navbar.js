@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import {RiMenu2Fill} from "react-icons/ri"
 import logo from "../public/assets/logo.png";
 
 const Navbar = () => {
@@ -82,7 +83,7 @@ const Navbar = () => {
             onClick={handleNav}
             className="md:hidden"
           >
-            <AiOutlineMenu size={25} />
+            <RiMenu2Fill size={25} />
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[68%] md:w-[45%] h-screen bg-[#ecf0f3] px-5 py-10 sm:p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[68%] md:w-[45%] h-screen bg-[#ecf0f3] px-8 py-10 sm:p-10 ease-in duration-500"
               : "fixed left-[-200%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -139,7 +140,7 @@ const Navbar = () => {
                 </li>
               </Link> */}
             </ul>
-            <div className="pt-20">
+            <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let's Connect
               </p>

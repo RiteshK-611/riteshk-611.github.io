@@ -23,7 +23,10 @@ const Main = () => {
             learning back-end technologies. */}
           </p>
           <div className="flex items-center justify-between m-auto max-w-[330px] py-4">
-            <div className="rounded-full text-[#183153] bg-[#FFD43B] border-[#183153] border-x-1 border-t-1 border-b-2 shadow-lg shadow-[0_6px_0px_0px_rgba(24, 49, 83)] p-6 cursor-pointer hover:scale-95 ease-in duration-300">
+            {/* <div className="rounded-full text-[#183153] bg-[#FFD43B] border-[#183153] border-x-1 border-t-1 border-b-2 shadow-lg shadow-[0_6px_0px_0px_rgba(24, 49, 83)] p-6 cursor-pointer hover:scale-95 ease-in duration-300">
+              <FaLinkedinIn />
+            </div> */}
+            <div className="rounded-full shadow-lg text-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <FaLinkedinIn />
             </div>
             <div className="rounded-full shadow-lg text-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
