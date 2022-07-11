@@ -1,6 +1,9 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import img from "../public/assets/projects/netflix.jpg";
+import inar from "../public/assets/projects/inar.jpg";
+import amazon from "../public/assets/projects/amazon.jpg";
+import weather from "../public/assets/projects/weather.jpg";
+import hulu from "../public/assets/projects/hulu.jpg";
 
 const Projects = () => {
   return (
@@ -12,51 +15,55 @@ const Projects = () => {
         <h2 className="py-4">What I've Built</h2>
         <div className="grid grid-rows-4 gap-8">
           <ProjectItem
-            title="Project"
-            bgImg={img}
-            projectUrl="https://github.com/"
+            title="InAR"
+            bgImg={inar} 
+            projectDemo="https://inar-shop.herokuapp.com"
+            projectCode="https://github.com/RiteshK-611/WebAR_Furnishing"
             usedArray={[
               "React",
               "Javascript",
-              "MongoDB",
               "Node",
+              "MongoDB",
               "MaterialUI",
+              "Figma",
+              "WebAR"
             ]}
           />
           <ProjectItem
-            title="Project"
-            bgImg={img}
-            projectUrl="https://github.com/"
+            title="Amazon Clone"
+            bgImg={amazon}
+            projectDemo="https://amazon-shopping.vercel.app"
+            projectCode="https://github.com/RiteshK-611/e-commerce"
             usedArray={[
               "React",
               "Javascript",
-              "MongoDB",
               "Node",
+              "Firebase",
               "MaterialUI",
+              "Stripe"
             ]}
           />
           <ProjectItem
-            title="Project"
-            bgImg={img}
-            projectUrl="https://github.com/"
+            title="City Weather"
+            bgImg={weather}
+            projectDemo="https://city-weather-report.netlify.app"
+            projectCode="https://github.com/RiteshK-611/weather-app"
             usedArray={[
               "React",
               "Javascript",
-              "MongoDB",
-              "Node",
-              "MaterialUI",
+              "PWA"
             ]}
           />
           <ProjectItem
-            title="Project"
-            bgImg={img}
-            projectUrl="https://github.com/"
+            title="Hulu UI Clone"
+            bgImg={hulu}
+            projectDemo="https://hulu-watch.vercel.app/"
+            projectCode="https://github.com/RiteshK-611/hulu"
             usedArray={[
               "React",
+              "Nextjs",
               "Javascript",
-              "MongoDB",
-              "Node",
-              "MaterialUI",
+              "TailwindCSS"
             ]}
           />
         </div>
