@@ -14,9 +14,7 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">I am not your average developer</p>
           <p className="py-2 text-gray-600">
-            🙏🏼 Namaste, I am Ritesh Kokam from Mumbai, India. I am a Full Stack Developer. I have completed my BE degree in the field of Information Technology and graduated from Mumbai University.
-            I love building projects with Javascript, React, Node and learning new technologies.
-            If I have to make choice between frontend and backend, I will definitely go for frontend first.
+            🙏🏼 Namaste, I am Ritesh Kokam from Mumbai, India. I am a Full Stack Developer. I have completed my graduation degree in the field of Information Technology from Mumbai University. I love building user interfaces (UI) and projects with Javascript, React, Node, and learning new technologies.
             {/* I have spent the last 12 years in the fire service working as a
             professional firefighter & paramedic. I have always had a knack for
             technology and working with computers. In 2019 I started working
