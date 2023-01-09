@@ -23,6 +23,7 @@ const Skills = () => {
   const grp = `group flex flex-col md:flex-row justify-center items-center hover:justify-evenly`;
   const icon = `text-[#555555] opacity-60 group-hover:fill-blue-500 group-hover:opacity-100 ease-out duration-300`;
   const name = `invisible md:hidden group-hover:visible group-hover:md:block ease-in-out duration-200`;
+
   return (
     <div id="skills" className="w-full md:h-screen p-2 py-16">
       <div className="max-w-[1240px] m-auto flex flex-col justify-center h-full">
