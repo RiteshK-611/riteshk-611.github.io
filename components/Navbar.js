@@ -1,18 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import {
-  AiOutlineClose,
-  AiOutlineMenu,
-  AiOutlineMail,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import {
-  BsFillPersonLinesFill,
-  BsFillMoonStarsFill,
-  BsTwitter,
-} from "react-icons/bs";
+import { AiOutlineClose } from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RiMenu2Fill, RiSunFill } from "react-icons/ri";
 import logoLight from "../public/assets/logo-light.png";
 import logoDark from "../public/assets/logo-dark.png";
@@ -21,8 +11,6 @@ import { useTheme } from "next-themes";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  // const [navBg, setNavBg] = useState("#ecf0f3");
-  // const [linkColor, setLinkColor] = useState("#1f2937");
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -53,7 +41,7 @@ const Navbar = () => {
     if (currentTheme === "dark") {
       return (
         <RiSunFill
-          className="w-5 h-5 text-yellow-500 "
+          className="w-5 h-5 text-yellow-500"
           role="button"
           onClick={() => {
             setTheme("light");
@@ -63,7 +51,7 @@ const Navbar = () => {
     } else {
       return (
         <BsFillMoonStarsFill
-          className="w-5 h-5 text-gray-900 "
+          className="w-5 h-5 text-gray-900"
           role="button"
           onClick={() => {
             setTheme("dark");
@@ -75,7 +63,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backdropFilter: "blur(5px) opacity(90%)" }}
+      style={{ backdropFilter: "blur(16px)" }}
       className={
         shadow
           ? "shadow-xl opacity-95 fixed w-full h-20 z-[100]"
@@ -119,7 +107,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[68%] md:w-[45%] h-screen px-8 py-10 sm:p-10 ease-in duration-500 backdrop-blur-xl backdrop-opacity-90 bg-white/5"
+              ? "fixed right-5 top-5 w-[350px] h-[450px] rounded-3xl px-8 py-8 ease-out duration-500 backdrop-blur-xl bg-[#eeeeee] dark:bg-[#111111]"
               : "fixed left-[-200%] top-0 p-10 ease-in duration-500"
           }>
           <div className="flex w-full items-center justify-between">
@@ -132,7 +120,7 @@ const Navbar = () => {
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer dark:shadow-black">
-              <AiOutlineClose />
+              <AiOutlineClose className="bg-red" />
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
@@ -143,7 +131,7 @@ const Navbar = () => {
           <div>
             <ul className="uppercase">
               <Link href="/#home">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="pt-3 py-4 text-sm">
                   Home
                 </li>
               </Link>
@@ -162,44 +150,8 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
+              <li className="py-4">{renderThemeChanger()}</li>
             </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Let's Connect
-              </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <Link href="https://twitter.com/riteshkokam">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsTwitter />
-                  </div>
-                </Link>
-                <Link href="https://instagram.com/ritesh_kokam">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiFillInstagram />
-                  </div>
-                </Link>
-                <Link href="https://linkedin.com/in/ritesh-kokam/">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </Link>
-                <Link href="https://github.com/RiteshK-611">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </Link>
-                <Link href="mailto:riteshkokam@gmail.com">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                {/* <Link href="https://">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link> */}
-              </div>
-            </div>
           </div>
         </div>
       </div>

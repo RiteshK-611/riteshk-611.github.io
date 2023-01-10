@@ -1,11 +1,12 @@
 import React from "react";
-import { AiOutlineMail, AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill, BsTwitter } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import {HiMail} from "react-icons/hi"
 import Link from "next/link";
 
 const Main = () => {
-  const darkMode = "dark:shadow-lg dark:shadow-black dark:hover:shadow-none "
+  const socialBtn = "dark:shadow-lg dark:shadow-black dark:hover:shadow-none rounded-full shadow-xl text-[#5651e5] p-6 text-lg cursor-pointer hover:shadow-none ease-in duration-300"
 
   return (
     <div id="home" className="w-full h-screen text-center">
@@ -15,7 +16,7 @@ const Main = () => {
             Let's Build Something Together
           </p>
           <h1 className="py-4 text-gray-700 dark:text-gray-600">
-            Hi, I'm <span className="text-[#5651e5]">Ritesh</span>
+            Hi, I'm <span className="text-[#5651e5]">Ritesh.</span>
           </h1>
           <h1 className="py-2 text-gray-700 dark:text-gray-600">A Full-Stack Software Developer</h1>
           <p className="py-4 text-gray-600 dark:text-gray-400 max-w-[70%] m-auto">
@@ -30,35 +31,30 @@ const Main = () => {
               <FaLinkedinIn />
             </div> */}
             <Link href="https://twitter.com/riteshkokam">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
+              <div className={socialBtn}>
                 <BsTwitter />
               </div>
             </Link>
             <Link href="https://instagram.com/ritesh_kokam">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
+              <div className={socialBtn}>
                 <AiFillInstagram />
               </div>
             </Link>
             <Link href="https://linkedin.com/in/ritesh-kokam/">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
+              <div className={socialBtn}>
                 <FaLinkedinIn />
               </div>
             </Link>
             <Link href="https://github.com/RiteshK-611">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
+              <div className={socialBtn}>
                 <FaGithub />
               </div>
             </Link>
             <Link href="mailto:riteshkokam@gmail.com">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
-                <AiOutlineMail />
+              <div className={socialBtn}>
+                <HiMail />
               </div>
-            </Link>
-            {/* <Link href="/#home">
-              <div className={darkMode + "rounded-full shadow-xl text-[#5651e5] p-6 cursor-pointer hover:shadow-none ease-in duration-300"}>
-                <BsFillPersonLinesFill />
-              </div>
-            </Link> */}
+            </Link>            
           </div>
         </div>
       </div>
