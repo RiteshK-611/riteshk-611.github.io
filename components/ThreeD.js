@@ -41,7 +41,7 @@ const Three = ({pointerStatus}) => {
       <mesh>
         <sphereGeometry args={[2.3, 64, 64]} />
         <meshPhongMaterial color={"#ffffff"} />
-        <Environment preset="dawn" background blur={0.8} />
+        {/* <Environment preset="dawn" background blur={0.8} /> */}
         {/* <OrbitControls enableZoom={false} /> */}
       </mesh>
     </>

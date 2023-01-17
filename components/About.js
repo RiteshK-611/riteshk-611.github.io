@@ -69,7 +69,7 @@ const About = () => {
             alt="/"
           />
         </div> */}
-        <Canva className="w-full h-auto m-auto p-4 hover:scale-95 ease-in duration-300" />
+        <Canva />
       </div>
     </div>
   );
