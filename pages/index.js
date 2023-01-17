@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import About from '../components/About'
 import Main from '../components/Main'
 import Projects from '../components/Projects'

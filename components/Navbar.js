@@ -66,9 +66,10 @@ const Navbar = () => {
       style={{ backdropFilter: "blur(16px)" }}
       className={
         shadow
-          ? "shadow-xl opacity-95 fixed w-full h-20 z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "shadow-xl opacity-95 fixed w-full h-18 md:h-20 z-[100]"
+          : "fixed w-full h-18 md:h-20 z-[100]"
       }>
+      {/* Desktop View */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src={theme == "light" ? logoLight : logoDark}
@@ -101,7 +102,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
+      
+      {/* Mobile View */}
       <div
         className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
         <div
