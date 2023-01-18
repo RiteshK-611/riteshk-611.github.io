@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlinePlayArrow } from "react-icons/md";
 import Link from "next/link";
 import Canva from "./ThreeD";
+import Image from "next/image";
+import pic from "../public/profile.png";
 
 const About = () => {
   return (
@@ -63,13 +65,10 @@ const About = () => {
             </p>
           </Link>
         </div>
-        {/* <div className="w-full h-auto m-auto p-4 hover:scale-95 ease-in duration-300">
-          <Image
-            src={pic}
-            alt="/"
-          />
-        </div> */}
-        <Canva />
+        <div className="w-full h-auto m-auto p-4 md:hidden hover:scale-95 ease-in duration-300">
+          <Image className="" src={pic} alt="/" />
+        </div>
+          <Canva />
       </div>
     </div>
   );
