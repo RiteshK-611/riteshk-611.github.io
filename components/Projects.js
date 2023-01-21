@@ -18,7 +18,7 @@ const Projects = () => {
             bgImg={inar} 
             title="InAR"
             description="In Augmented Reality (InAR). It is an Augmented Reality (AR) based Ecommerce application. It uses Web-based AR or WebAR to place furniture/product in your environment, to get clear knowledge of whether this product fits in our environment before buying it out."
-            projectDemo="https://inar-shop.herokuapp.com"
+            projectDemo="https://inar-shop.vercel.app"
             projectCode="https://github.com/RiteshK-611/WebAR_Furnishing"
             usedArray={[
               "React",
