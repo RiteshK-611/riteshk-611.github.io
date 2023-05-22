@@ -11,8 +11,8 @@ import { useTheme } from "next-themes";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
 
   const handleNav = () => {
     setNav(!nav);
@@ -91,6 +91,11 @@ const Navbar = () => {
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
+              </li>
+            </Link>
+            <Link href="https://riteshkokam.hashnode.dev">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Blog
               </li>
             </Link>
             <li className="ml-10 items-center justify-center dark:text-blue-600">
