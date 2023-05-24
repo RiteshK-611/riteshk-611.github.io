@@ -13,7 +13,7 @@ import {
   SiMongodb,
   SiFirebase,
   SiTailwindcss,
-  SiMaterialui,
+  SiMui,
   SiNextdotjs,
   SiHeroku,
   SiTypescript,
@@ -65,7 +65,7 @@ const Skills = () => {
             <h6 className={name}>Tailwind</h6>
           </div>
           <div className={grp}>
-            <SiMaterialui className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <SiMui className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
             <h6 className={name}>MaterialUI</h6>
           </div>
           <div className={grp}>
