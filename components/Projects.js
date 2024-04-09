@@ -4,6 +4,7 @@ import inar from "../public/assets/projects/inar.jpg";
 import amazon from "../public/assets/projects/amazon.jpg";
 import weather from "../public/assets/projects/weather.jpg";
 import hulu from "../public/assets/projects/hulu.jpg";
+import chatpdf from "../public/assets/projects/chatpdf.jpg";
 
 const Projects = () => {
   return (
@@ -13,7 +14,23 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I've Built</h2>
-        <div className="grid grid-rows-4 gap-8">
+        <div className="grid grid-rows-4 gap-8"><ProjectItem
+            bgImg={chatpdf} 
+            title="ChatPDF"
+            description="An application where you can chat wih your PDFs. It uses RAG (Retrieval Augmented Generation) with Gemini AI to generate the answer from PDF. In this you can have multiple PDF chats, also you can clear out chats and start new."
+            projectDemo="https://chatspdf.vercel.app"
+            projectCode="https://github.com/RiteshK-611/chatpdf-main"
+            usedArray={[
+              "React",
+              "Next.js",
+              "Typescript",
+              "Gemini AI",
+              "PostgreSQL",
+              "Shacdn UI",
+              "Drizzle",
+              "Clerk"
+            ]}
+          />
           <ProjectItem
             bgImg={inar} 
             title="InAR"
