@@ -16,10 +16,21 @@ import {
   SiFigma,
   SiNpm,
 } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaNode,
+  FaNpm,
+  FaGitAlt,
+  FaGithub,
+  FaFigma,
+} from "react-icons/fa";
 
 const Skills = () => {
-  const grp = `group py-5 flex flex-col md:flex-row justify-center items-center hover:justify-evenly dark:neumorphism-dark neumorphism-light relative overflow-hidden`;
-  const icon = `text-[#555555] opacity-60 group-hover:fill-blue-500 group-hover:opacity-100 ease-in-out duration-10000 w-12 h-12 sm:w-13 sm:h-13`;
+  const grp = `group flex justify-center items-center hover:justify-evenly border rounded-xl border-[#5651e5]`;
+  const icon = `text-[#555555] opacity-60 group-hover:fill-blue-500 group-hover:opacity-100 ease-out duration-300`;
   const name = `invisible md:hidden group-hover:visible group-hover:md:block ease-in-out duration-200`;
 
   const skills = [
@@ -48,16 +59,71 @@ const Skills = () => {
           Skills
         </p>
         <h2 className="py-4">What I can do</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-8">
-          {skills.map((skill, index) => (
-            <div key={index} className={grp}>
-              {/* <div className="absolute w-full h-full bg-red-500 opacity-80 z-10 transform transition-transform duration-500 ease-in-out group-hover:-translate-x-full">
-                <div className="absolute w-3 h-1/2 bg-red-900 rounded-l-xl top-1/4 right-0 z-20"></div>
-              </div> */}
-              {skill.icon}
-              <h6 className={name}>{skill.name}</h6>
-            </div>
-          ))}
+        <div className="grid grid-cols-3 sm:grid-cols-8 gap-2">
+          <div className={`${grp} flex-col row-span-2`}>
+            <FaHtml5 className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>HTML</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <FaCss3Alt className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>CSS</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <FaJsSquare className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>Javascript</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <FaReact className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>React</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <FaNode className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>Node</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <SiMongodb className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>MongoDB</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <SiFirebase className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>Firebase</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <SiTailwindcss className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>Tailwind</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <SiMui className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>MaterialUI</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <FaNpm className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>NPM</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <FaGitAlt className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>GIT</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <FaGithub className={`${icon} w-14 h-14 sm:w-16 sm:h-16`} />
+            <h6 className={name}>Github</h6>
+          </div>
+          <div className={`${grp} flex-col row-span-2`}>
+            <FaFigma className={`${icon} w-12 h-12 sm:w-14 sm:h-14`} />
+            <h6 className={name}>Figma</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <SiNextdotjs className={`${icon} w-12 h-12 sm:w-14 sm:h-14`} />
+            <h6 className={name}>Next</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <SiHeroku className={`${icon} w-12 h-12 sm:w-14 sm:h-14`} />
+            <h6 className={name}>Heroku</h6>
+          </div>
+          <div className={`${grp} col-span-2 py-5`}>
+            <SiTypescript className={`${icon} w-12 h-12 sm:w-14 sm:h-14`} />
+            <h6 className={name}>Typescript</h6>
+          </div>
         </div>
       </div>
     </div>
