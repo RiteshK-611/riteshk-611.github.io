@@ -31,4 +31,20 @@
     button {
         @apply shadow-xl shadow-gray-300 hover:scale-95 hover:shadow-none dark:shadow-lg dark:shadow-black dark:hover:shadow-none rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#3b82f6] text-white
     }
+
+    .dark {
+        @apply bg-[#111111]
+    }
+
+    .neumorphism-dark {
+        border-radius: 10px;
+        background: #171717;
+        box-shadow:  inset 9px 9px 8px #070707, inset -8px -8px 7px #1b1b1b
+    }
+
+    .neumorphism-light {
+        border-radius: 10px;
+        background: #ecf0f3;
+        box-shadow:  inset 9px 9px 8px #b0b0b0, inset -8px -8px 7px #e3eded
+    }
 }
