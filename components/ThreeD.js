@@ -61,7 +61,7 @@ const Canva = () => {
     <>
       <Canvas
         ref={canvasRef}
-        className="dark:bg-[#111111] hidden md:block"
+        className="hidden md:block"
         onPointerEnter={(e) => setPointerStatus(true)}
         onPointerLeave={(e) => setPointerStatus(false)}>
         <Three pointerStatus={pointerStatus} canvasRef={canvasRef} />
