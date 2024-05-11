@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
 module.exports = {
-  nextConfig,
+  ...nextConfig,
   images: {
-    loader: 'akamai',
-    path: '',
-    domains: ['github.com'],
-  }
-}
+    loader: "akamai",
+    path: "",
+    domains: ["github.com"],
+  },
+};
