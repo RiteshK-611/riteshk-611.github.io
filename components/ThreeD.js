@@ -36,9 +36,13 @@ const Three = ({ pointerStatus, canvasRef }) => {
     <>
       <spotLight
         ref={lightRef}
+        color="#ffffff"
         position={[0, 0, 8]}
-        intensity={900}
-        angle={0.11}
+        intensity={1}
+        penumbra={0}
+        angle={0.115}
+        decay={2}
+        distance={500}
         map={prof}
       />
       <mesh>
